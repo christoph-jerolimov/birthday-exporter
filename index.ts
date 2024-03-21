@@ -48,6 +48,8 @@ cards.forEach((card, index) => {
       title: `${prefix}${name}${suffix}`,
       start: [start.getFullYear(), start.getMonth() + 1, start.getDate()],
       end: [end.getFullYear(), end.getMonth() + 1, end.getDate()],
+      recurrenceRule: 'FREQ=YEARLY',
+      busyStatus: 'FREE',
     });
   } else {
     console.log('Card', index, 'has unexpected date format:', bday);
